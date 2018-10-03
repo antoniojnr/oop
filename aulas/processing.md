@@ -30,7 +30,7 @@ O projeto completado nesta parte está [aqui](https://github.com/antoniojnr/oop/
 
 ## Entendendo um sketch
 
-Um *sketch* é um arquivo de animação. Para definir um *sketch*, você, tipicamente, precisará definir duas funções: `setup()` e `draw()`.
+Para definir um *sketch*, você, tipicamente, precisará definir duas funções: `setup()` e `draw()`.
 
 ### `setup()`
 
@@ -42,29 +42,37 @@ Somente pode haver uma função `setup()` para cada programa e ela não deve ser
 
 ### `draw()`
 
-Chamada diretamente após `setup()`, a função `draw()` executa continuamente o código contido no seu bloco até que o programa seja finalizado ou até que `noLoop()` seja chamada.
-
-Se `noLoop()` for chamada em `setup()`, `draw()` ainda será executada uma vez antes de parar. `draw()` é chamada automaticamente e nunca deve ser chamada explicitamente.
-
-Controle-a com `noLoop()`, `redraw()` e `loop()`. Depois que `noLoop()` parar o código em `draw()`, `redraw()` faz com que o código dentro de `draw()` execute uma vez e `loop()` faz com que o código volte a executar continuamente.
+Chamada diretamente após `setup()`, a função `draw()` executa continuamente o código contido no seu bloco até que o programa seja finalizado ou até que seja chamada uma função para pausar a sua execução.
 
 ## Configuração do sketch
 
-Use as funções e constantes a seguir para configurar como o seu sketch. Você poderá definir propriedades como o tamanho do painel onde poderá desenhar, velocidade de atualização da animação, entre outros.
+Use as funções e constantes a seguir para configurar como o seu *sketch*. Você poderá definir propriedades como o tamanho da tela onde poderá desenhar, velocidade de atualização da animação, entre outros.
 
-### `createCanvas()`
+### `size()`
 
-`createCanvas(largura, altura)` cria um novo painel de dimensões `largura` x `altura`.
-
-### `resizeCanvas()`
-
-`resizeCanvas(largura, altura)` redimensiona o painel com as novas dimensões `largura` x `altura`.
+`size(largura, altura)` cria um novo painel de dimensões `largura` x `altura`.
 
 ### `frameRate()`
 
 `frameRate(fr)` define um novo valor para a quantidade de quadros por segundos desenhados. Para `frameRate(30)`, o programa tentará atualizar os quadros 30 vezes por segundo.
 
 ## Desenhando formas
+
+### `ellipse()`
+
+`ellipse(x, y, r1, r2)` desenha uma elipse na posição de coordenadas `x` e `y`, e raios `r1` e `r2`.
+
+### `line()`
+
+`line(x1, y1, x2, y2)` desenha uma linha do ponto (`x1`, `y1`) a (`x2`, `y2`).
+
+### `rect()`
+
+`rect(x, y, l, a)` desenha um retângulo com o canto superior esquerdo posicionado no ponto (`x`, `y`), de largura `l` e altura `a`.
+
+### Exercício
+
+1. Como você desenharia, usando apenas a função `line()`, um triângulo de vértices (`10`, `10`), (`50`, `10`) e (` `30`, `45`)?
 
 ## Outras funções
 
