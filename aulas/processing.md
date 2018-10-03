@@ -66,6 +66,11 @@ Use as funções e constantes a seguir para configurar como o seu *sketch*. Voc�
 
 `line(x1, y1, x2, y2)` desenha uma linha do ponto (`x1`, `y1`) a (`x2`, `y2`).
 
+<pre>
+       ._________.
+ (x1,y1)         (x2,y2)
+</pre>
+
 ### `rect()`
 
 `rect(x, y, l, a)` desenha um retângulo com o canto superior esquerdo posicionado no ponto (`x`, `y`), de largura `l` e altura `a`.
