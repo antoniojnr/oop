@@ -72,8 +72,10 @@ Use as funções e constantes a seguir para configurar como o seu *sketch*. Voc�
 
 ### Exercício
 
-1. Como você desenharia, usando apenas a função `line()`, um triângulo de vértices (`10`, `10`), (`50`, `10`) e (` `30`, `45`)?
+1. Como você desenharia, usando apenas a função `line()`, um triângulo de vértices (`10`, `10`), (`50`, `10`) e (`30`, `45`)?
+
+2. Como você desenharia, usando apenas a função `line()`, um retângulo cujo canto superior esquerdo está no vértice (`10`, `10`) e possui 40 pixels de largura e 30 de altura?
 
 ## Outras funções
 
-Consulte a referência da linguagem para mais informações: [https://p5js.org/reference](https://p5js.org/reference)
+Consulte a referência da linguagem para mais informações: [https://processing.org/reference/](https://processing.org/reference/)
