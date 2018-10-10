@@ -110,4 +110,5 @@ Remove todos os elementos do `ArrayList` armazenado na variável `nomes`.
 
 ## Outras funções
 
-Consulte a referência da linguagem para mais informações sobre `ArrayList`s: [https://docs.oracle.com/javase/1.5.0/docs/api/java/util/ArrayList.html](https://docs.oracle.com/javase/1.5.0/docs/api/java/util/ArrayList.html)
+* Processing: [https://processing.org/reference/](https://processing.org/reference/)
+* `ArrayList`s: [https://docs.oracle.com/javase/1.5.0/docs/api/java/util/ArrayList.html](https://docs.oracle.com/javase/1.5.0/docs/api/java/util/ArrayList.html)
