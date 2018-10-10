@@ -1,12 +1,10 @@
-# Roteiro da aula
+# Conceitos de Orientação a Objeto
 
-## Conceitos de Orientação a Objeto
-
-### Apresentação
+## Apresentação
 
 Nesta aula, iremos aplicar os conceitos de orientação a objeto aprendidos até o momento em Processing.
 
-### Classes
+## Classes
 
 Para criar classes, clique na seta para baixo na barra de título do sketch e, em seguida, clique na opção "Nova aba". O nome da nova aba deverá ser o nome de sua nova classe – insira o nome sem a extensão `.java`.
 
@@ -14,7 +12,7 @@ Escreva o código Java normalmente, com o nome da classe igual ao nome do arquiv
 
 Por padrão, as classes criadas ficam todas no mesmo pacote do sketch, então não é necessário criar pacotes.
 
-#### Exercício
+### Exercício
 
 1. Crie uma classe `Circulo`. Qual(is) método(s) e construtor(es) você precisará definir para `Circulo`?
 
