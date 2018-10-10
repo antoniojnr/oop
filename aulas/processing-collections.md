@@ -104,6 +104,10 @@ Remove todos os elementos do `ArrayList` armazenado na variável `nomes`.
 
 2. Agora, em vez de um array, crie um `ArrayList`, adicione 10 `Circulo`s e desenhe-os. Utilize o método `random()` para lhe ajudar a definir posições aleatórias para os `Circulo`s.
 
+## Projetos relacionados a esta aula
+
+[processing_inicio](https://github.com/antoniojnr/oop/tree/master/projetos/processing_inicio)
+
 ## Outras funções
 
 Consulte a referência da linguagem para mais informações sobre `ArrayList`s: [https://docs.oracle.com/javase/1.5.0/docs/api/java/util/ArrayList.html](https://docs.oracle.com/javase/1.5.0/docs/api/java/util/ArrayList.html)
