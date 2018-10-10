@@ -80,6 +80,15 @@ System.out.println(nomes.indexOf("João"));
 
 Retorna o índice de um `elemento` dentro do `ArrayList` armazenado na variável `nomes`. Caso o elemento não exista dentro do `ArrayList`, o método `indexOf()` retorna -1.
 
+#### `remove(índice)`
+
+**Exemplo**
+```java
+nomes.remove(2);
+```
+
+Remove o elemento no `índice` especificado do `ArrayList` armazenado na variável `nomes`.
+
 #### `clear()`
 
 **Exemplo**
@@ -94,7 +103,6 @@ Remove todos os elementos do `ArrayList` armazenado na variável `nomes`.
 1. Lembra da classe `Circulo` criada na aula passada? Você vai usá-la neste exercício. Crie um array com 10 `Circulo`s e desenhe-os. Utilize o método `random()` para lhe ajudar a definir posições aleatórias para os `Circulo`s.
 
 2. Agora, em vez de um array, crie um `ArrayList`, adicione 10 `Circulo`s e desenhe-os. Utilize o método `random()` para lhe ajudar a definir posições aleatórias para os `Circulo`s.
-
 
 ## Outras funções
 
