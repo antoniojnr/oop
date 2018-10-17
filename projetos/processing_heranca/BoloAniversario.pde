@@ -2,7 +2,6 @@ public class BoloAniversario extends BoloChocolate {
   
   public void adicionarCobertura() {
     setCor(#FFF5DB);
-    preparar();
     noStroke();
     fill(#FF0000);
     ellipse(230, 90, 4, 4);
