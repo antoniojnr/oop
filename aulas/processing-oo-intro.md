@@ -26,6 +26,10 @@ Herança é um poderoso instrumento que auxilia na reutilização de código. Em
 
 A subclasse herda métodos e propriedades definidos com as visibilidades *default*, `public` ou `protected`.
 
+Copie e execute o projeto [processing_heranca](). Este projeto tem duas classes: `BoloChocolate` e `BoloAniversario`. Você verá um bolo de chocolate, ou pelo menos o que parece ser um bolo desenhado na tela.
+
+![alt text](https://github.com/antoniojnr/oop/blob/master/aulas/bolo.png "Sketch")
+
 ## Polimorfismo
 
 A palavra **polimorfismo** vem do grego e significa "múltiplas formas". Esta palavra é utilizada em diversos contextos para descrever situações em que algo acontecem de múltiplas formas. Em computação, descreve o conceito de objetos de diferentes tipos que podem ser acessados através da mesma interface.
