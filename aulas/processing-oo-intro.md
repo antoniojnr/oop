@@ -26,30 +26,71 @@ Herança é um poderoso instrumento que auxilia na reutilização de código. Em
 
 A subclasse herda métodos e propriedades definidos com as visibilidades *default*, `public` ou `protected`.
 
-Copie e execute o projeto [processing_heranca](). Este projeto tem duas classes: `BoloChocolate` e `BoloAniversario`. Você verá um bolo de chocolate, ou pelo menos o que parece ser um bolo desenhado na tela.
+Copie e execute o projeto [processing_heranca](https://github.com/antoniojnr/oop/tree/master/projetos/processing_heranca). Este projeto tem duas classes: `BoloChocolate` e `BoloAniversario`. Você verá um bolo de chocolate, ou pelo menos o que parece ser um bolo desenhado na tela.
 
 ![alt text](https://github.com/antoniojnr/oop/blob/master/aulas/bolo.png "Sketch")
 
-## Polimorfismo
+Este é o comportamento definido pela classe `BoloChocolate`. Agora suponha que `BoloAniversario` herde as propriedades e métodos de `BoloChocolate`. `BoloChocolate` é a **superclasse** e `BoloAniversario` é a **subclasse**. Execute o exemplo comentando a Parte 1 indicada no código e retirando o comentário da Parte 2.
 
-A palavra **polimorfismo** vem do grego e significa "múltiplas formas". Esta palavra é utilizada em diversos contextos para descrever situações em que algo acontecem de múltiplas formas. Em computação, descreve o conceito de objetos de diferentes tipos que podem ser acessados através da mesma interface.
+`BoloAniversario` herdou tudo de `BoloChocolate` e adicionou por cima deste uma cobertura de baunilha e M&Ms. :) O resultado é mostrado a seguir.
 
-The word polymorphism is used in various contexts and describes situations in which something occurs in several different forms. In computer science, it describes the concept that objects of different types can be accessed through the same interface. Each type can provide its own, independent implementation of this interface. It is one of the core concepts of object-oriented programming (OOP).
+![alt text](https://github.com/antoniojnr/oop/blob/master/aulas/bolo-aniversario.png "Sketch")
 
+As características de bolo de chocolate foram herdadas, é possível preparar um bolo chamando o método `preparar()`. Ambos os tipos de bolo possuem este método. Primeiro, porque ele está definido em `BoloChocolate` e, depois, porque `BoloAniversario` herda este método. Nem todo bolo precisa ter cobertura e M&Ms. O bolo de chocolate não tem e o bolo de aniversário adiciona essas características. Se for necessário fazer um novo tipo de bolo, basta herdar o comportamento de `BoloChocolate` e começar daí.
 
-So polymorphism is the ability (in programming) to present the same interface for differing underlying forms (data types).
+Essa foi a minha forma de explicar o básico sobre herança. Agora é preciso mostrar como as coisas são feitas em Java. Vamos deixar o desenho do bolo de lado na explicação. Caso queira ver o projeto completo, ele está disponível em: [processing_heranca](https://github.com/antoniojnr/oop/tree/master/projetos/processing_heranca).
 
-For example, in many languages, integers and floats are implicitly polymorphic since you can add, subtract, multiply and so on, irrespective of the fact that the types are different. They're rarely considered as objects in the usual term.
+## Herança em Java
 
-But, in that same way, a class like BigDecimal or Rational or Imaginary can also provide those operations, even though they operate on different data types.
+Para definir que uma classe é subclasse de outra em Java, utiliza-se a palavra-chave `extends`. No código a seguir, `BoloAniversario` é a superclasse e `BoloChocolate` é a subclasse.
 
-The classic example is the Shape class and all the classes that can inherit from it (square, circle, dodecahedron, irregular polygon, splat and so on).
+```java
+public class BoloAniversario extends BoloChocolate {
 
-With polymorphism, each of these classes will have different underlying data. A point shape needs only two co-ordinates (assuming it's in a two-dimensional space of course). A circle needs a center and radius. A square or rectangle needs two co-ordinates for the top left and bottom right corners and (possibly) a rotation. An irregular polygon needs a series of lines.
+  public void adicionarCobertura() {
+    // Desenho da cobertura
+  }
+}
+```
 
-By making the class responsible for its code as well as its data, you can achieve polymorphism. In this example, every class would have its own Draw() function and the client code could simply do:
+A classe `BoloChocolate` foi definida da seguinte forma.
 
+```java
+public class BoloChocolate {
 
-## Outras funções
+  private int cor;
 
-Consulte a referência da linguagem para mais informações: [https://processing.org/reference/](https://processing.org/reference/)
+  public BoloChocolate() {
+    this.cor = #984502;
+  }
+
+  protected void setCor(int cor) {
+    this.cor = cor;
+  }
+
+  public void preparar() {
+    // Preparar o bolo
+  }
+}
+```
+
+Quando a classe `BoloAniversario` torna-se superclasse de `BoloChocolate`, automaticamente herda os métodos `setCor()` e `preparar()`. O atributo `cor` não é herdado, porque é `private`. Caso seja necessário sobrescrever o método `preparar()`, por exemplo, você pode invocar o método da superclasse usando a palavra chave `super`, como no exemplo a seguir.
+
+```java
+public class BoloAniversario extends BoloChocolate {
+
+  public void preparar() {
+    super.preparar();
+  }
+}
+```
+
+O método `preparar()` de `BoloAniversario` executa normalmente e invoca o método `preparar()` de sua superclasse.
+
+### Exercício
+
+1. Crie as classes `Circulo` e `SmileyFace`. A classe `Circulo` possui o método `desenhar()` que, obviamente, desenha um círculo. `SmileyFace` herda de `Circulo` e pinta o círculo de amarelo e adiciona as formas para desenhar a carinha :).
+
+2. Crie as classes `Retangulo` e `Quadrado`. Ambas possuem o método `desenhar()`. `Retangulo` possui um construtor que recebe as coordenadas do ponto superior esquerdo do retângulo e suas dimensões. `Quadrado` reutiliza o construtor de `Retangulo`, mas recebe apenas as coordenadas do ponto superior esquerdo do quadrado e o comprimento do lado. O método `desenhar()` de `Quadrado` reutiliza o método de `Retangulo`.
+
+3. Crie as classes `Veiculo`, `Carro`, `Aviao` e `Navio`. `Veiculo` possui o método `mover()` e o atributo `velocidade`. O valor de velocidade depende do tipo de veículo: Avião: 10 px/s, Carro: 2 px/s e Navio: 0.5 px/s.
