@@ -142,3 +142,5 @@ No exemplo acima, o `metodoAbstrato()` deve ser implementado pela subclasse. O `
 2. Utilize as imagens do diretório [img](https://github.com/antoniojnr/oop/tree/master/projetos/img) para criar os monstros do jogo Space Invaders. Pesquise sobre a exibição de imagens em Processing. Cada um dos monstros está em uma imagem m`x`.png, onde `x` varia de 1 a 4. Cada monstro herda da classe monstro, que possui os métodos `mover()`, `desenhar()` e `getValor()`. O último método retorna o valor que o jogador obtém ao derrotá-lo — este valor corresponde a `x`. Cada monstro possui um movimento diferente, seja horizontal, vertical ou diagonal. Defina a forma como o monstro irá se mover.
 
 3. Defina a interface `Controlavel` que possui os métodos `subir()`, `descer()`, `esquerda()` e `direita()`. Crie duas classes diferentes, `Bola` e `Quadrado` que implementam `Controlavel`.
+
+4. Considere o exercício **1** acima. Na classe `Forma`, crie o método `moverParaOrigem()`, que move a forma para a coordenada (0, 0). Este método deve ser `final`.
