@@ -40,7 +40,7 @@ As características de bolo de chocolate foram herdadas, é possível preparar u
 
 Essa foi a minha forma de explicar o básico sobre herança. Agora é preciso mostrar como as coisas são feitas em Java. Vamos deixar o desenho do bolo de lado na explicação. Caso queira ver o projeto completo, ele está disponível em: [processing_heranca](https://github.com/antoniojnr/oop/tree/master/projetos/processing_heranca).
 
-## Herança em Java
+### Herança em Java
 
 Para definir que uma classe é subclasse de outra em Java, utiliza-se a palavra-chave `extends`. No código a seguir, `BoloAniversario` é a superclasse e `BoloChocolate` é a subclasse.
 
@@ -94,3 +94,28 @@ O método `preparar()` de `BoloAniversario` executa normalmente e invoca o méto
 2. Crie as classes `Retangulo` e `Quadrado`. Ambas possuem o método `desenhar()`. `Retangulo` possui um construtor que recebe as coordenadas do ponto superior esquerdo do retângulo e suas dimensões. `Quadrado` reutiliza o construtor de `Retangulo`, mas recebe apenas as coordenadas do ponto superior esquerdo do quadrado e o comprimento do lado. O método `desenhar()` de `Quadrado` reutiliza o método de `Retangulo`.
 
 3. Crie as classes `Veiculo`, `Carro`, `Aviao` e `Navio`. `Veiculo` possui o método `mover()` e o atributo `velocidade`. O valor de velocidade depende do tipo de veículo: Avião: 10 px/s, Carro: 2 px/s e Navio: 0.5 px/s.
+
+## Polimorfismo
+
+Polimorfismo é a habilidade (em programação) de apresentar a mesma **interface** para diferentes **formas subjacentes**. Talvez seja mais fácil explicar isso utilizando conceitos do mundo físico:
+
+Se eu pedir a três estudantes para irem ao centro, até um mercado, e comprarem o seu lanche favorito, pode ser que um me traga uma garrafa de refrigerante, outro, pão, presunto e muçarela e, outro, me traga um pacote de miojo. Cada um dos estudantes trouxe seu lanche favorito à sua maneira. Talvez um tenha ido de moto, outro tenha ido a pé e o outro tenha pego uma carona, mas todos cumpriram seu dever, que era trazer o lanche favorito. Então temos:
+
+* **Interface:** trazer lanche favorito
+* **Formas subjacentes:** preferências pessoais, meio de transporte, quantidade de dinheiro
+
+Polimorfismo permite que essa interface seja implementada de diferentes formas, com potencialmente muitas formas diferentes, cada uma com seu propósito específico. O código que usa essa interface não deveria se preocupar sobre como se dará a implementação, somente que a interface será obedecida.
+
+### Polimorfismo em Java
+
+#### Classes abstratas
+
+#### Interfaces
+
+### Exercício
+
+1. Crie a classe abstrata `Forma` e as classes `Circulo`, `Triangulo` e `Quadrado` que a implementam. A classe `Forma` possui o método abstrato `desenhar()` e `getArea()`, que as outras classes implementam.
+
+2. Utilize as imagens do diretório [img](https://github.com/antoniojnr/oop/tree/master/projetos/img) para criar os monstros do jogo Space Invaders. Pesquise sobre a exibição de imagens em Processing. Cada um dos monstros está em uma imagem m`x`.png, onde `x` varia de 1 a 4. Cada monstro herda da classe monstro, que possui os métodos `mover()`, `desenhar()` e `getValor()`. O último método retorna o valor que o jogador obtém ao derrotá-lo — este valor corresponde a `x`. Cada monstro possui um movimento diferente, seja horizontal, vertical ou diagonal. Defina a forma como o monstro irá se mover.
+
+3. Defina a interface `Controlavel` que possui os métodos `subir()`, `descer()`, `esquerda()` e `direita()`. Crie duas classes diferentes, `Bola` e `Quadrado` que implementam `Controlavel`.
