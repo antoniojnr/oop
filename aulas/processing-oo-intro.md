@@ -110,6 +110,29 @@ Polimorfismo permite que essa interface seja implementada de diferentes formas, 
 
 #### Classes abstratas
 
+Uma classe abstrata não pode ser instanciada e pode ser usada ao se criar uma subclasse que herda a classe abstrata e que pode ser instanciada. A superclasse abstrata:
+
+* Define métodos que podem ser usados pela subclasse.
+* Define métodos abstratos que a subclasse deve implementar.
+* Provê uma interface comum que permite que a subclasse seja possa ser intercambiada com todas as outras subclasses.
+
+```java
+abstract public class MinhaClasseAbstrata
+{
+    abstract public void metodoAbstrato();
+
+    public void metodoImplementado() {
+      System.out.print("metodoImplementado()");
+    }
+
+    final public void metodoFinal() {
+      System.out.print("metodoFinal()");
+    }
+}
+```
+
+No exemplo acima, o `metodoAbstrato()` deve ser implementado pela subclasse. O `metodoImplementado()` é um método comum, que pode ser sobrescrito pelas subclasses, enquanto o `metodoFinal()` não pode ser sobrescrito, porque está marcado como `final`.
+
 #### Interfaces
 
 ### Exercício
