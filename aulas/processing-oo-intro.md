@@ -135,6 +135,26 @@ No exemplo acima, o `metodoAbstrato()` deve ser implementado pela subclasse. O `
 
 #### Interfaces
 
+Objetos definem sua interação com o mundo externo através dos métodos que expõem. Os métodos são a interface do objeto com o mundo externo. Usemos, mais uma vez, um exemplo do mundo real: os botões na frente de sua TV são a interface entre você e os circuitos elétricos do outro lado da capa de plástico. Você pressiona o botão *Power* para ligar ou desligar a TV.
+
+Em sua forma mais comum, uma interface é um grupo de métodos relacionados com o corpo vazio. O comportamento de uma bicicleta, se especificado como uma interface, pode ser da seguinte forma:
+
+```java
+interface Bicycle {
+  void mudarMarcha(int novoValor);
+
+  void acelerar(int incremento);
+
+  void frear(int decremento);
+}  
+```
+
+Interfaces somente possuem métodos abstratos e pode ser implementada usando a palavra-chave `implements`. Uma interface pode estender somente outra interface Java, enquanto que uma classe abstrata pode estender outra classe Java e implementar múltiplas interfaces Java. Os membros de uma interface (métodos e atributos) são públicos por padrão, enquanto classes abstratas podem ter membros da classe com visibilidade `private`, `protected`, etc.
+
+Veja mais:
+* [Interfaces](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
+* [Difference between Abstract Class and Interface in Java](https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/)
+
 ### Exercício
 
 1. Crie a classe abstrata `Forma` e as classes `Circulo`, `Triangulo` e `Quadrado` que a implementam. A classe `Forma` possui o método abstrato `desenhar()` e `getArea()`, que as outras classes implementam.
@@ -144,3 +164,5 @@ No exemplo acima, o `metodoAbstrato()` deve ser implementado pela subclasse. O `
 3. Defina a interface `Controlavel` que possui os métodos `subir()`, `descer()`, `esquerda()` e `direita()`. Crie duas classes diferentes, `Bola` e `Quadrado` que implementam `Controlavel`.
 
 4. Considere o exercício **1** acima. Na classe `Forma`, crie o método `moverParaOrigem()`, que move a forma para a coordenada (0, 0). Este método deve ser `final`.
+
+5. Jogo - nave (determinar a necessidade de criar classes abstratas e interfaces)

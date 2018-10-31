@@ -1,4 +1,4 @@
-public class Veiculo {
+abstract public class Veiculo {
   
   private float velocidade;
   protected float x;
@@ -10,11 +10,9 @@ public class Veiculo {
     this.y = 250;
   }
   
-  public void desenhar() {
-    rect(this.x, this.y, 60, 30);    
-  }
+  abstract public void desenhar();
   
-  public void mover() {
+  final public void mover() {
     this.x += this.getVelocidade();
   }
   

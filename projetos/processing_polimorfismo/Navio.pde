@@ -9,6 +9,6 @@ public class Navio extends Veiculo {
   
   public void desenhar() {
     this.imagem.resize(100, 50);
-    image(this.imagem, super.x, super.y);    
+    image(this.imagem, super.x, super.y);
   }
 }

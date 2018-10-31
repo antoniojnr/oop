@@ -1,7 +1,6 @@
 Veiculo carro;
 Veiculo aviao;
 Veiculo navio;
-Veiculo veiculo = new Veiculo();
 
 void setup() {
   size(500, 500);
@@ -12,8 +11,6 @@ void setup() {
 
 void draw() {
   background(255);
-  veiculo.desenhar();
-  veiculo.mover();
   carro.desenhar();
   carro.mover();
   aviao.desenhar();
