@@ -1,11 +1,20 @@
 Forma circ;
+Forma quad;
+Forma triangulo;
+ArrayList<Forma> formas = new ArrayList<Forma>();
 
 void setup() {
   size(400, 300);
-  circ = new Circulo(width/2, height/2, 60);
+  
+  formas.add(new Circulo(width/2, height/2, 60));
+  formas.add(new Quadrado(100, 100, 60));
+  formas.add(new Triangulo(200, 200, 40, 40));
 }
 
 void draw() {
   background(255);
-  circ.desenhar();
+  
+  for (Forma f : formas) {
+    f.desenhar();  
+  }
 }
