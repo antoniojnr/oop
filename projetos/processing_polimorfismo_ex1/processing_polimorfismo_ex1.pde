@@ -17,4 +17,9 @@ void draw() {
   for (Forma f : formas) {
     f.desenhar();  
   }
+  
+  for (int x = 0; x < formas.size(); x++) {
+    Forma f = formas.get(x);
+    f.desenhar();
+  }
 }

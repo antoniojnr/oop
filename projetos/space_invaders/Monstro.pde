@@ -8,7 +8,7 @@ public abstract class Monstro {
   
   public void tratarBordas() {
     if (x > width) {
-      x = 0;
+      x = -50;
     }
   }
   
