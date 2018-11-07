@@ -1,7 +1,10 @@
 ArrayList<Monstro> monstros = new ArrayList<Monstro>();
+Nave nave;
 
 void setup() {
   size(500, 500);
+
+  nave = new Nave(width/2, height - 45);
   
   int pos = 20;
   for (int i = 0; i < 9; i++) {
@@ -35,4 +38,11 @@ void draw() {
     m.desenhar();
     m.mover();
   }
+  
+  nave.mover(mouseX);
+  nave.desenhar();
+}
+
+void keyPressed() {
+  println(keyCode);
 }
