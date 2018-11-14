@@ -34,15 +34,31 @@ void setup() {
 void draw() {
   background(0);
   
-  for (Monstro m : monstros) {
+  for (int i = monstros.size() - 1; i >= 0; i--) {
+    Monstro m = monstros.get(i);
+    
     m.desenhar();
     m.mover();
+    
+    for (int j = nave.balas.size() - 1; j >= 0; j--) {
+      PVector bala = nave.balas.get(j);
+      
+      if (m.colidiu(bala.x, bala.y)) {
+        monstros.remove(i);
+        nave.balas.remove(j);
+      }
+    }
   }
   
-  nave.mover(mouseX);
   nave.desenhar();
 }
 
 void keyPressed() {
-  println(keyCode);
+  if (keyCode == 37) {
+    nave.mover(nave.getX() - 10);
+  } else if (keyCode == 39) {
+    nave.mover(nave.getX() + 10);
+  } else if (keyCode == 32) {
+    nave.atirar();
+  }
 }
