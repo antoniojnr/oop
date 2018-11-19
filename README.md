@@ -6,3 +6,6 @@ Conteúdo da disciplina de Programação Orientada a Objetos
 * [10 de outubro de 2018](https://github.com/antoniojnr/oop/blob/master/aulas/processing-collections.md)
 * [17 de outubro de 2018](https://github.com/antoniojnr/oop/blob/master/aulas/processing-oo-intro.md)
 * [24 de outubro de 2018](https://github.com/antoniojnr/oop/blob/master/aulas/processing-oo-intro.md#polimorfismo)
+
+## Projeto
+* [Critérios do projeto](https://github.com/antoniojnr/oop/blob/master/aulas/projeto.md)

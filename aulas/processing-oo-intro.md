@@ -165,4 +165,4 @@ Veja mais:
 
 4. Considere o exercício **1** acima. Na classe `Forma`, crie o método `moverParaOrigem()`, que move a forma para a coordenada (0, 0). Este método deve ser `final`.
 
-5. Jogo - nave (determinar a necessidade de criar classes abstratas e interfaces)
+5. Baix
