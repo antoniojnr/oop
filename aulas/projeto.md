@@ -12,14 +12,17 @@ Você poderá usar uma das sugestões abaixo ou desenvolver a sua própria ideia
 6. Jogos de plataforma
 7. Jogo da memória
 
+A aceitação da ideia dependerá da avaliação do professor, que dependerá da complexidade e possibilidade de execução com a ferramenta escolhida.
+
 ## Critérios de avaliação
 
-Os critérios 1, 4, 6 e 7 são obrigatórios e o critério 5 renderá pontuação extra. Escolha um dos critérios 2 e 3, ou os dois, que também renderão pontuação extra.
+Os critérios 1, 2, 5, 7 e 8 são obrigatórios e o critério 6 renderá pontuação extra. Escolha um dos critérios 3 e 4, ou os dois, que também renderão pontuação extra.
 
-1. Uso dos conceitos de orientação a objetos ensinados em sala: Classes e objetos, passagem de parâmetros, construtores, encapsulamento, herança e polimorfismo (classes abstratas e interfaces). Os integrantes da equipe devem identificar a necessidade de cada um dos conceitos e implementar, conforme necessário.
-2. Uso de elementos de jogos: vidas, fases, pontuação, nível de dificuldade, movimento.
-3. Interdisciplinaridade: utilizar conceitos aprendidos em outras disciplinas.
-4. Originalidade: projetos com código copiado de outros lugares terão nota anulada (ou seja, zero no 4° bimestre).
-5. Uso de sprites e efeitos sonoros.
-6. A dupla deve trabalhar igualmente no código. Cada um da dupla será arguido sobre partes do código separadamente (nada de *"eu fiz esses desenhos e ele(a) programou"*).
-7. A atitude e comportamento de cada um durante as aulas serão avaliados de forma subjetiva. As aulas deverão ser usadas única e exclusivamente para tratar sobre o projeto e tirar dúvidas.
+1. O projeto deverá ser desenvolvido em Processing (Java).
+2. Uso dos conceitos de orientação a objetos ensinados em sala: Classes e objetos, passagem de parâmetros, construtores, encapsulamento, herança e polimorfismo (classes abstratas e interfaces). Os integrantes da equipe devem identificar a necessidade de cada um dos conceitos e implementar, conforme necessário.
+3. Uso de elementos de jogos: vidas, fases, pontuação, nível de dificuldade, movimento.
+4. Interdisciplinaridade: utilizar conceitos aprendidos em outras disciplinas.
+5. Originalidade: projetos com código copiado de outros lugares terão nota anulada (ou seja, zero no 4° bimestre).
+6. Uso de sprites e efeitos sonoros.
+7. A dupla deve trabalhar igualmente no código. Cada um da dupla será arguido sobre partes do código separadamente (nada de *"eu fiz esses desenhos e ele(a) programou"*).
+8. A atitude e comportamento de cada um durante as aulas serão avaliados de forma subjetiva. As aulas deverão ser usadas única e exclusivamente para tratar sobre o projeto e tirar dúvidas.
